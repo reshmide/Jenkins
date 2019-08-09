@@ -27,7 +27,7 @@ public class HelloWithTestsIT {
         String[] args = {"1"};
         HelloApp.main(args);
 
-        assertThat(out.getLog(), is(equalTo(Hello.HELLO + "\n")));
+        assertThat(out.getLog(), is(equalTo(Hello.HELLO + "\r\n")));
     }
 
     @Test
